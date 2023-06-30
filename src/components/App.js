@@ -4,6 +4,7 @@ import SearchForm from './components/SearchForm';
 import ImageList from './components/ImageList';
 import SingleImage from './components/SingleImage';
 import RandomNASAImage from './components/RandomNASAImage';
+import './style.css';
 
 function App() {
   return (
