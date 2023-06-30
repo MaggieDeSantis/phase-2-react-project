@@ -8,7 +8,7 @@ const App = () => {
   const handleSearch = (searchTerm) => {
     // Make the API request using fetch or any other method
     // Here's an example using fetch:
-    fetch(`https://api.nasa.gov/planetary/apod?api_key=YOUR_API_KEY&date=${searchTerm}`)
+    fetch(`https://api.nasa.gov/planetary/apod?api_key=REACT_APP_API_KEY&date=${searchTerm}`)
       .then(response => response.json())
       .then(data => {
         // Update the images state with the fetched data
