@@ -1,19 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Image Search</title>
-  <link rel="stylesheet" href="./styles.css">
+  <title>NASA Image Search</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-  <div class="search-form">
-    <form id="searchForm">
-      <input type="text" id="searchInput" placeholder="Enter search term" required>
-      <button type="submit">Search</button>
-    </form>
-  </div>
 
-  <script src="./dist/bundle.js"></script>
+<body>
+  <header>
+    <h1>NASA Image Search</h1>
+  </header>
+
+  <main>
+    <div id="search-bar">
+      <form id="search-form">
+        <input type="text" id="search-input" placeholder="Search images..." />
+        <button type="submit">Search</button>
+      </form>
+    </div>
+
+    <div id="search-results"></div>
+  </main>
+
+  <script src="index.js"></script>
 </body>
+
 </html>
