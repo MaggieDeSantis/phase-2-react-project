@@ -22,7 +22,20 @@
           <a href="/galaxies">Galaxies</a>
         </li>
       </ul>
+      <form id="search-form">
+        <input type="text" id="search-input" placeholder="Enter search term..." />
+        <button type="submit">Search</button>
+      </form>
     </nav>
     <div id="root"></div>
+
+    <script>
+      document.getElementById('search-form').addEventListener('submit', function (event) {
+        event.preventDefault();
+        var searchTerm = document.getElementById('search-input').value;
+        // Perform search action with the entered search term
+        console.log('Perform search for:', searchTerm);
+      });
+    </script>
   </body>
 </html>
